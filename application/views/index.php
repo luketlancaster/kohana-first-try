@@ -22,14 +22,25 @@
         color: chocolate;
       }
 
+      h4 {
+        font-size: .20em;
+        color: cornflowerblue;
+      }
+
   </style>
 </head>
 
-
-<h1>Hello World</h1>
-
-
-<h2>Brough to you buy Kohana</h2>
+<body>
 
 
-<h3>Testing Git Deploy!</h3>
+  <h1>Hello World</h1>
+
+
+  <h2>Brough to you buy Kohana</h2>
+
+
+  <h3>Testing Git Deploy!</h3>
+
+  <h4>Here's the Message!: <?php echo $message; ?></h4>
+
+</body>

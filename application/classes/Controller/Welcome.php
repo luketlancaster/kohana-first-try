@@ -1,11 +1,17 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Welcome extends Controller {
+class Controller_Welcome extends Controller_Template {
+
+    public $template = 'index';
 
 	public function action_index()
 	{
-    $view = View::factory('index');
-		$this->response->body($view);
+        $this->$template->$message = 'Hey There World!!';
 	}
+
+    public function action_show()
+    {
+
+    }
 
 } // End Welcome
