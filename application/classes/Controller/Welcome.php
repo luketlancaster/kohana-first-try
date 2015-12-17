@@ -5,10 +5,10 @@ class Controller_Welcome extends Controller {
 
     public $message = "Hello there wold!";
 
-	public function action_index()
-	{
+    public function action_index()
+    {
     $view = View::factory('index');
-		$this->response->body($view, $message);
-	}
+        $this->response->body($view, $this->$message);
+    }  
 
 } // End Welcome
